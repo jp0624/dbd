@@ -1,0 +1,20 @@
+.hero-images {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+@media (max-width: 992px) {
+  .hero-images {
+    flex-direction: column;
+    justify-content: left;
+    li {
+      width: 100vw;
+      img {
+        min-width: 100vw;
+        object-fit: cover;
+      }
+    }
+  }
+}

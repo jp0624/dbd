@@ -2,15 +2,15 @@
   left: 0;
   border-bottom: 3px solid;
   z-index: -1;
+  background-color: rgba(0, 0, 0, 0.75);
   &.expanded {
-    --tw-border-opacity: 1;
-    border-color: rgb(153 15 15 / var(--tw-border-opacity));
+    border-color: rgb(153 15 15);
     height: 22rem;
   }
 }
 .mobile-open .nav-list {
   --tw-bg-opacity: 1;
-  background-color: rgb(41 45 46 / var(--tw-bg-opacity));
+  background-color: rgb(41 45 46);
   height: calc(var(--app-height) - 89px);
   overflow: scroll;
 }
