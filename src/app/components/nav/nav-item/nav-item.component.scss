@@ -53,11 +53,6 @@
   }
 }
 @media (min-width: 992px) {
-  .nav-item a:after {
-    -webkit-clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
-    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
-    width: 4rem;
-  }
 }
 @media (max-width: 992px) {
   .nav-item {
@@ -67,6 +62,9 @@
     border-style: solid;
     display: block;
     padding: 1.5rem 2rem;
+    a::after {
+      display: none;
+    }
   }
   app-sub-nav {
     background-color: rgba(48, 3, 3, 1);
