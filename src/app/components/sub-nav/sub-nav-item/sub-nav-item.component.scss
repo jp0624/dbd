@@ -1,0 +1,39 @@
+li {
+}
+.nav-link-title {
+  span {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+.nav-link-content {
+  button {
+    text-transform: uppercase;
+    width: 100%;
+    background-color: rgba(153, 15, 15, 1);
+    padding: 0.75rem;
+    &:hover {
+      background-color: rgb(102, 7, 7);
+    }
+
+    span {
+      display: block;
+      padding: 0.5rem;
+      border: 2px solid #fff;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-sub-main {
+    width: 100vw;
+    flex-direction: row-reverse;
+    text-align: start;
+    justify-content: start;
+    .nav-link-title,
+    .nav-link-content {
+      width: 50vw;
+    }
+  }
+}

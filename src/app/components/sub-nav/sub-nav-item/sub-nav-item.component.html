@@ -1,0 +1,29 @@
+<li class="nav-panel-small relative z-10 flex flex-col items-center">
+  <a
+    href="/"
+    class="nav-sub-main bg-grayDarker lg:bg-transparent relative flex lg:flex-col w-full h-full items-center uppercase shadow-md lg:shadow-none"
+  >
+    <div class="nav-link-title flex flex-row my-2">
+      <img
+        src="{{ subItem.icon }}"
+        class="w-auto h-8 max-w-nav-icon object-contain mr-4"
+      />
+      <span class="text-align-center align-content-center">{{
+        subItem.name
+      }}</span>
+    </div>
+    <div class="nav-link-content">
+      <div
+        class="image-wrapper h-48 flex justify-center align-middle overflow-hidden"
+      >
+        <img
+          src="{{ subItem.image }}"
+          class="flex-shrink-0 min-w-full min-h-full object-cover"
+        />
+      </div>
+      <button type="button">
+        <span class="block p-2 b-2 b-white">{{ subItem.cta }}</span>
+      </button>
+    </div>
+  </a>
+</li>

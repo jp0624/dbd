@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@use "styles/_reset.scss";
+@use "styles/_variables.scss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button {
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  &::after {
+    background-image: url(https://deadbydaylight.com/static/button-texture-a33721519c0277808c40e1276b0f671e.jpg);
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    mix-blend-mode: multiply;
+    opacity: 0.6;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}

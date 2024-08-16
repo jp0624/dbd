@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Home",
+    "path": "/"
+  },
+  {
+    "name": "Game",
+    "path": "/game",
+    "subnav": [
+      {
+        "name": "Game Overview",
+        "path": "/",
+        "image": "https://deadbydaylight.com/static/c3f2458c3a5bca701cb4ccc96f15cf66/653d1/dbd_keyart_tab_34c48816bb.jpg",
+        "icon": "https://assets.deadbydaylight.com/game_info_icon_2f718f0030.png",
+        "cta": "Learn to Play"
+      },
+      {
+        "name": "Killers & Survivors",
+        "path": "/",
+        "image": "https://deadbydaylight.com/static/bf2f8302e05b3864bfebb4a6f4b83964/b640a/nav_characters_image_f91693f0ac.jpg",
+        "icon": "https://assets.deadbydaylight.com/game_info_icon_2f718f0030.png",
+        "cta": "Explore"
+      },
+      {
+        "name": "Chapter DLC",
+        "path": "/",
+        "image": "https://deadbydaylight.com/static/993f37ad861f61ac3d9defb73a591074/6daaf/Keyart_Resizes_WEBSITE_1920x1080_FINAL_b1717b2fd7.png",
+        "icon": "https://assets.deadbydaylight.com/game_info_icon_2f718f0030.png",
+        "cta": "See More"
+      },
+      {
+        "name": "The Archives",
+        "path": "/",
+        "image": "https://deadbydaylight.com/static/8729e078133a9f3a86c86ed4560fe4e3/b640a/nav_archives_image_55e6ab8d64.jpg",
+        "icon": "https://assets.deadbydaylight.com/game_info_icon_2f718f0030.png",
+        "cta": "Learn More"
+      },
+      {
+        "name": "Maps",
+        "path": "/",
+        "image": "https://deadbydaylight.com/static/9a534cca78f3b0b4edb9f446573e19b3/e5774/nav_map_image_0c895f174b.jpg",
+        "icon": "https://assets.deadbydaylight.com/game_info_icon_2f718f0030.png",
+        "cta": "Explore"
+      }
+    ]
+  },
+  {
+    "name": "News & Media Gallery",
+    "path": "/news",
+    "subnav": [
+      {
+        "name": "Latest News",
+        "path": "/",
+        "image": "https://deadbydaylight.com/static/b33d4a89b421b4dda531b2b22fd8a039/17f5c/nav_news_image_6494011c23.webp",
+        "icon": "https://assets.deadbydaylight.com/news_icon_c2a331b792.png",
+        "cta": "Read More"
+      },
+      {
+        "name": "Game Updates",
+        "path": "/",
+        "image": "https://deadbydaylight.com/static/4a44d41d361cf09cf3f1e3ddeeb3c809/b640a/nav_game_updates_image_16d61f533d.jpg",
+        "icon": "https://assets.deadbydaylight.com/news_icon_c2a331b792.png",
+        "cta": "Read More"
+      },
+      {
+        "name": "Media Gallery",
+        "path": "/",
+        "image": "https://deadbydaylight.com/static/7c0252ae0998529dc733c9508fdbb173/5d679/nav_media_image_df7de9e81f.jpg",
+        "icon": "https://assets.deadbydaylight.com/news_icon_c2a331b792.png",
+        "cta": "Read More"
+      }
+    ]
+  },
+  {
+    "name": "Community",
+    "path": "/community",
+    "subnav": [
+      {
+        "name": "Forum",
+        "path": "/",
+        "image": "https://deadbydaylight.com/static/d74402015dd01f12b09f68a2f197a24d/b640a/nav_forum_image_6f6d32451b.jpg",
+        "icon": "https://assets.deadbydaylight.com/forum_icon_8cfbea0547.png",
+        "cta": "Enter"
+      },
+      {
+        "name": "Social Media",
+        "path": "/",
+        "image": "https://deadbydaylight.com/static/d74402015dd01f12b09f68a2f197a24d/b640a/nav_forum_image_6f6d32451b.jpg",
+        "icon": "https://assets.deadbydaylight.com/news_icon_c2a331b792.png",
+        "cta": "Read More"
+      }
+    ]
+  },
+  {
+    "name": "Merch",
+    "src": "https://shop.deadbydaylight.com/?_ga=2.187777192.1821189445.1634046941-1928524259.1626279109"
+  },
+  {
+    "name": "Help",
+    "src": "https://support.deadbydaylight.com/"
+  }
+]

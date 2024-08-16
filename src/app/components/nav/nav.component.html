@@ -1,0 +1,28 @@
+<nav
+  class="nav-main sticky top-0 h-20 max-h-20 w-full list-none justify-between text-center blurry-background"
+  [ngClass]="[menuOpen ? 'mobile-open' : '']"
+>
+  <ul class="nav-list" class="mt-2">
+    <div
+      class="nav-wrapper flex flex-row justify-center text-center gap-x-5 uppercase font-bold"
+    >
+      <app-nav-item
+        *ngFor="let navItem of navItems"
+        [navItem]="navItem"
+        [expanded]="expandedMenu === navItem.name ? true : false"
+        (setExpandedEvent)="setExpanded($event)"
+      ></app-nav-item>
+    </div>
+  </ul>
+</nav>
+<div
+  [ngClass]="[expandedMenu ? 'expanded' : '']"
+  class="nav-overlay absolute z-under h-0 w-full blurry-background transition-all duration-500 lg:shadow-md"
+></div>
+<button
+  class="nav-hamburger"
+  (click)="setOpen(true)"
+  [ngClass]="[menuOpen ? 'mobile-open' : '']"
+>
+  <div class="nav-hamburger-inner"></div>
+</button>

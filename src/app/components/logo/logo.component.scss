@@ -1,0 +1,32 @@
+.logo-link .logo-wrapper {
+  width: 40rem;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+svg {
+  height: 100%;
+  max-width: 100%;
+}
+@media (min-width: 992px) {
+  .logo-wrapper {
+    animation-delay: 0.3s;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-name: logoHide;
+    left: 0;
+    position: absolute;
+  }
+  .logo-link #dbd-logoPart2 {
+    animation-delay: 0s;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-name: logoFadeOut;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .logo-link {
+    width: 15rem;
+  }
+}

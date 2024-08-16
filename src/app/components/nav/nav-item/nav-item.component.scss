@@ -1,0 +1,80 @@
+:host {
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .nav-item-title {
+    white-space: nowrap;
+  }
+  app-sub-nav {
+    color: #fff;
+    opacity: 0;
+    z-index: -1;
+    transition: z-index 0s 0s, opacity 0.25s 0s;
+    &.expanded {
+      opacity: 1;
+      transition: z-index 0.5s 0.5s, opacity 0.5s 0s;
+    }
+  }
+  .expanded {
+    .subnav-indicator {
+      transform: rotate(-180deg);
+      transform-origin: 50% 25%;
+      opacity: 1;
+    }
+  }
+  .subnav-indicator {
+    transition: 0.5s;
+    height: 0.8rem;
+    width: 1.2rem;
+  }
+}
+.nav-item {
+  position: relative;
+  a:after {
+    --tw-bg-opacity: 1;
+    background-color: rgb(204 0 0 / var(--tw-bg-opacity));
+    -webkit-clip-path: polygon(0 0, 100% 0, 0 200%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 0 200%, 0 100%);
+    content: "";
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    transform: translateX(-50%);
+    transition: 0.3s;
+    height: 0.4rem;
+    width: 0rem;
+    bottom: -0.5rem;
+  }
+  a.expanded::after {
+    width: 4rem;
+    opacity: 1;
+  }
+}
+@media (min-width: 992px) {
+  .nav-item a:after {
+    -webkit-clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+    width: 4rem;
+  }
+}
+@media (max-width: 992px) {
+  .nav-item {
+    align-items: start;
+    border-color: rgba(18, 18, 18, 1);
+    border-bottom: 2px;
+    border-style: solid;
+    display: block;
+    padding: 1.5rem 2rem;
+  }
+  app-sub-nav {
+    background-color: rgba(48, 3, 3, 1);
+    display: none;
+    height: auto;
+    flex-direction: column;
+    position: relative;
+    &.expanded {
+      display: block;
+    }
+  }
+}

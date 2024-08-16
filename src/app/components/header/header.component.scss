@@ -1,0 +1,42 @@
+header {
+  .nav {
+    top: 0;
+  }
+  button {
+    background-color: rgba(153, 15, 15, 1);
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 2rem;
+    white-space: nowrap;
+
+    height: 4rem;
+    margin-top: 0.5rem;
+    &:hover {
+      background-color: rgb(102, 7, 7);
+    }
+  }
+  app-logo {
+    width: 7rem;
+  }
+}
+
+@media (max-width: 992px) {
+  header {
+    flex-direction: column;
+    app-logo {
+      height: 3rem;
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+    }
+    app-nav {
+      height: auto;
+      max-height: none;
+      overflow: hidden;
+    }
+  }
+}
