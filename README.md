@@ -1,27 +1,23 @@
-# Wishlist
+# DBD Landing Page Study
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.4.
+An unofficial Angular 18 presentation study recreating a game-brand landing experience, with navigation, large hero imagery and responsive SCSS. Presented as a prototype, not an official client engagement.
 
-## Development server
+[Live demo](https://jp-dbd.vercel.app/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Local development
 
-## Code scaffolding
+Run these commands from the repository root:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```sh
+npm install
+npm start
+```
 
-## Build
+Available scripts:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- `npm run build`: `ng build`.
+- `npm run test`: `ng test`.
 
-## Running unit tests
+## Main dependencies
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+`@angular/core`, `express`. See `package.json` for the full dependency list and versions.
